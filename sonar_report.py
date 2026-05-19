@@ -72,10 +72,10 @@ print("  SonarQube Full Export Tool")
 print("=" * 55)
 print("")
 
-SONAR_URL = get_input("SonarQube URL", "http://10.10.1.20:9000").rstrip("/")
-PROJECT = get_input("Project Key", "dvwa-php-scan")
+SONAR_URL = get_input("SonarQube URL", "http://localhost:9000").rstrip("/")
+PROJECT = get_input("Project Key")
 TOKEN = get_input("Token (sqp_...)")
-OUTPUT_DIR = get_input("Output folder", "sonar-export")
+OUTPUT_DIR = get_input("Output folder name"")
 
 print("")
 print("Connecting to: " + SONAR_URL)
